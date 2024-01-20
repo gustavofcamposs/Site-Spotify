@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <script src="../JavaScript/home.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style/home.css">
+    <link rel="stylesheet" href="../Style/home_responsive.css"> <!--esse arquivo está o layout responsivo-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Spotify Premium - 3 meses grátis</title>
+</head>
+<body>
+    <header class="Container_Header">
+        <div class="Header">
+            <img src="../Image/Spotify_Logo_RGB_White.png" alt="" height="40px" width="132px">
+            <nav id="nav_itens" class="Nav_">
+                <li> <a>Premium</a> </li>
+                <li> <a>Suporte</a> </li>
+                <li> <a>Baixar</a>  </li>
+                <li>|</li>
+                <li> <a>Inscrever-se</a> </li>
+                <li> <a>Entrar</a> </li>
+            </nav>  
+        </div>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span> 
+    </header>
+    <div class="container_Hamburguer"><!--Esse conteiner está invisivel apenas para poder posicionar o menuHamburguer-->
+        <div class="menu_Hamburguer"  id="menu_Hamburguer">
+            <ul class="Lista_Hamburguer">
+                <li> <h1>Premium</h1> </li>
+                <li> <h1>Suporte</h1> </li>
+                <li> <h1>Baixar</h1> </li>
+                <li> __ </li>
+                <li> <h3>Inscrever-se</h3> </li>
+                <li> <h3>Entrar</h3> </li>
+            </ul>
+            <div class="Logo_Menu_Hamburguer">
+                <img class="Image_Hamburguer" src="../Image/Spotify_Logo_RGB_White.png" alt="" height="40px" width="132px">
+            </div>
+        </div> <!--Essa div só vai aparecer no @media screen 1084-->
+    </div>
+    <div class="Background_Container">
+        <div class="Banner_Container">
+            <div class="Plano_Premium">
+                <div class="Titulo_banner">
+                    <h1>Tá acabando: 3 meses de Premium<br> por R$ 0,00</h1>
+                    <h1></h1>
+                </div>
+                <div class="Subtitulo_banner">
+                    <h2>Curta músicas sem anúncios, modo offline e muito mais. Cancele<br> quando quiser.</h2>
+                    <h2>A oferta termina em 2d: 6h: 6min.</h2>
+                </div>
+                <div class="Botoes_banner">
+                    <button class="Botão_Assinar"><p>Experimente 3 Meses por R$ 0,00</p></button>
+                    <button class="Botão_VerPlanos"><P>Ver planos</P></button>
+                </div>
+                <div class="Descricao_banner">
+                    <p>Somente no plano Individual. Depois, é só R$ 21,90/mês. Sujeito a Termos e Condições. 
+                    Disponível apenas para quem nunca <br>usou o Premium. A oferta termina em 31/12/2023.</p>
+                </div>
+            </div>
+            <div class="Logo_Premium">
+                <img src="../Image/Banner_Spotify.jpg" height="400px" width="100%">
+            </div>
+        </div>
+    </div>
+    <div class="Container_ser_Premium">
+        <div class="Box_ser_Premium">
+            <div class="Titulo_ser_Premium">
+                <h2>Por que ser Premium?</h2>
+            </div>
+            <div class="Vantagens_ser_Premium">
+                <div class="Itens_ser_Premium">
+                    <div class="Imagem_Ser_Premium">
+                        <img src="../Image/SaveMusic.png" height="140px" width="140px">
+                    </div>
+                    <div class="Subtitulo_ser_Premium">
+                        <p>Modo offline</p>
+                    </div>
+                    <div class="Descricao_ser_Premium">
+                        <P>Ouça música onde estiver.</P>
+                    </div>
+                </div>
+                <div class="Itens_ser_Premium">
+                    <div class="Imagem_Ser_Premium">
+                        <img src="../Image/SemAnuncio.png" height="140px" width="140px">
+                    </div>
+                    <div class="Subtitulo_ser_Premium">
+                        <p>Ouça músicas sem anúncios.</p>
+                    </div>
+                    <div class="Descricao_ser_Premium">
+                       <p>Curta música sem anúncios.</p> 
+                    </div>
+                </div>
+                <div class="Itens_ser_Premium">
+                    <div class="Imagem_Ser_Premium">
+                        <img src="../Image/PlayMusic.png" height="140px" width="140px">
+                    </div>
+                    <div class="Subtitulo_ser_Premium">
+                        <p>Ouça na ordem que quiser.</p>
+                    </div>
+                    <div class="Descricao_ser_Premium">
+                        <p>Qualquer música em qualquer ordem.</p>
+                    </div>
+                </div>
+                <div class="Itens_ser_Premium">
+                    <div class="Imagem_Ser_Premium">
+                        <img src="../Image/HeadphoneSong.svg" height="140px" width="140px">
+                    </div>
+                    <div class="Subtitulo_ser_Premium">
+                        <p>Qualidade de som superior</p>
+                    </div>
+                    <div class="Descricao_ser_Premium">
+                        <p>Sinta o som.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Background_Planos">
+        <div class="Container_Planos">
+            <div class="Container_Plano_Indivudual">
+                <div class="Plano_Individual">
+                    <div class="Info_Plano">
+                        <div class="Background_Info_Plano">
+                            <p>Grátis por 1 mês</p>
+                        </div>
+                    </div>
+                    <div class="Logo_Plano">
+                    
+                    </div>
+                    <div class="Titulo_Plano">
+                        <h1>Individual</h1>
+                    </div>
+                    <div class="Descricao_Plano">
+                        <p>Grátis por 1 mês</p>
+                        <p>Depois é só R$ 21,90/mês</p>
+                    </div>
+                    <div class="Sub_Descricao_Plano">
+                        <ul class="Lista_Descricao_Plano">
+                            <li>1 conta Premium</li>
+                            <li>Cancele quando quiser</li>
+                            <li>Faça uma assinatura ou pague uma vez só</li>
+                        </ul>  
+                    </div>
+                    <div class="Background_Botao_Plano">
+                        <button class="Botao_Plano">
+                            <p>Comece agora</p>
+                        </button>
+                    </div>
+                    <div class="texto_plano">
+                        <p>Grátis por 1 mês, depois R$ 21,90 por mês. Oferta</p>
+                        <p>disponível apenas para quem nunca teve o Premium.</p>
+                        <p>Sujeito a Termos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Container_Plano_Indivudual">
+                <div class="Plano_Individual">
+                    <div class="Info_Plano">
+                        <div class="Background_Info_Plano" id="Info_2">
+                            <p>Grátis por 1 mês</p>
+                        </div>
+                    </div>
+                    <div class="Logo_Plano">
+                    
+                    </div>
+                    <div class="Titulo_Plano" id="Titulo_Plano_2">
+                        <h1>Universitários</h1>
+                    </div>
+                    <div class="Descricao_Plano">
+                        <p>Grátis por 1 mês</p>
+                        <p>Depois é só R$ 11,90/mês</p>
+                    </div>
+                    <div class="Sub_Descricao_Plano">
+                        <ul class="Lista_Descricao_Plano">
+                            <li>1 conta Premium verificada</li>
+                            <li>Desconto para estudantes elegíveis</li>
+                            <li>Cancele quando quiser</li>
+                        </ul>  
+                    </div>
+                    <div class="Background_Botao_Plano">
+                        <button class="Botao_Plano" id="Botao_Plano_2">
+                            <p>Comece agora</p>
+                        </button>
+                    </div>
+                    <div class="texto_plano">
+                        <p>Grátis por 1 mês, depois R$ 11,90 por mês. Oferta</p>
+                        <p>disponível apenas para estudantes de instituições de</p>
+                        <p>ensino superior aprovadas e que nunca tiveram o Premium</p>
+                        <p>antes. Sujeito a Termos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Container_Plano_Indivudual">
+                <div class="Plano_Individual">
+                    <div class="Logo_Plano">
+                
+                    </div>
+                    <div class="Titulo_Plano" id="Titulo_Plano_3">
+                        <h1>Duo</h1>
+                    </div>
+                    <div class="Descricao_Plano">
+                        <p>R$ 27,90/mês</p>
+                    </div>
+                    <div class="Sub_Descricao_Plano" id="Sub_Descricao_Plano_3">
+                        <ul class="Lista_Descricao_Plano" id="Lista_Descricao_Plano_3">
+                            <li>2 contas Premium</li>
+                            <li>Cancele quando quiser</li>
+                            <li>Faça uma assinatura ou pague uma vez só</li>
+                        </ul>  
+                    </div>
+                    <div class="Background_Botao_Plano">
+                        <button class="Botao_Plano" id="Botao_Plano_3">
+                            <p>Comece agora</p>
+                        </button>
+                    </div>
+                    <div class="texto_plano" id="texto_plano_3">
+                        <p>Para casais que moram juntos. Sujeito a Termos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Container_Plano_Indivudual">
+                <div class="Plano_Individual">
+                    <div class="Logo_Plano">
+                    
+                    </div>
+                    <div class="Titulo_Plano" id="Titulo_Plano_4">
+                        <h1>Família</h1>
+                    </div>
+                    <div class="Descricao_Plano">
+                        <p>R$ 34,90/mês</p>
+                    </div>
+                    <div class="Sub_Descricao_Plano" id="Sub_Descricao_Plano_4">
+                        <ul class="Lista_Descricao_Plano">
+                            <li>Até 6 contas Premium ou Kids</li>
+                            <li>Bloqueie músicas com conteúdo explícito</li>
+                            <li>Acesso ao Spotify Kids</li>
+                            <li>Cancele quando quiser</li>
+                            <li>Faça uma assinatura ou pague uma vez só</li>
+                        </ul>  
+                    </div>
+                    <div class="Background_Botao_Plano">
+                        <button class="Botao_Plano" id="Botao_Plano_4">
+                            <p>Comece agora</p>
+                        </button>
+                    </div>
+                    <div class="texto_plano" id="texto_plano_3">
+                        <p>Para até 6 familiares que moram juntos. Sujeito a Termos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Background_Footer">
+        <footer class="Container_Footer">
+            <div class="Imagem_footer">
+                <img src="../Image/Spotify_Logo_RGB_White.png" height="40px" width="135px">
+            </div>
+            <div class="Saber_mais_Footer">
+                <ul class="Info_footer">
+                    <li id="Info1"><p> EMPRESA </p></li>
+                    <li><p> Sobre </p></li>
+                    <li><p> Empregos </p></li>
+                    <li><p> For the Record </p></li>
+                </ul>
+                <ul class="Info_footer">
+                    <li id="Info1"><p>COMUNIDADES</p></li>
+                    <li><p> Para Artistas </p></li>
+                    <li><p> Desenvolvedores </p></li>
+                    <li><p> Publicidades </p></li>
+                    <li><p> Investidores </p></li>
+                    <li><p> Fornecedores </p></li>
+                </ul>
+                <ul class="Info_footer">
+                    <li id="Info1"><p> LINKS ÚTEIS </p></li>
+                    <li><p> Suporte </p></li>
+                    <li><p> Player da Web </p></li>
+                    <li><p> Aplicativo móvel grátis </p></li>
+                </ul>
+            </div>
+            <div class="Redes_Sociais">
+                <img src="../Image/instragram.png" height="48px" width="48px">
+                <img src="../Image/x.png" height="48px" width="48px" >
+                <img src="../Image/Facebook.png"height="48px" width="48px" >
+            </div>
+        </footer>
+        <div class="Informacoes_do_site">
+        </div>
+    </div>
+</body>
+</html>

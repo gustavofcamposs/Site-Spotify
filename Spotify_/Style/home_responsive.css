@@ -1,0 +1,445 @@
+@media (max-width: 1250px){
+
+    .Plano_Premium{ /*Dimiui apenas a altura para ficar mais alinhado a imagem a direita*/
+        height: 85%;
+    }
+
+}
+
+
+@media (max-width: 1140px){
+    .Background_Container{
+        /*background-color: aliceblue; apenas uma ideia de inverter as cores, iria ficar show.. eu acho */ 
+    }
+
+    .Titulo_banner h1{
+        font-size: 35px;
+    }
+
+    .Subtitulo_banner h2{
+        font-size: 19px;
+    }
+
+    /*.Descricao_banner p{
+        word-wrap: break-word;
+    }*/
+}
+
+@media (max-width: 1060px){ /*A partir dessa media o menu Hamburguer já aparece*/
+
+    .Banner_Container{
+        width: 95%; /*Antes esva auto(automatico), isso fazia ele manter a largura necesária para que as div de dentro não saissem para fora
+        mas chegou um momento que ela começou a ficar grudada com as beiradas da tela, então eu deixei 95% para sobrar "bordas"
+        ao redero*/
+    }
+
+    .Titulo_banner h1{
+        font-size: 31px; /*Diminiui apenas para ficar proporcional e com certeza tem uma maneira melhor de fazer isso..*/
+    }
+
+    .Subtitulo_banner h2{/*Diminiui apenas para ficar proporcional e com certeza tem uma maneira melhor de fazer isso..*/
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 995px){ /*Aqui vamos começar a "Quebrar" o layout com flex-direction:collum*/
+
+    .Background_Container{
+        height: 110vh;/*Estava de 72vh*/
+    }
+
+    .Banner_Container{
+        flex-direction: column;
+        height: 95%; /*o AUTO não funciona, tive que aumentar a Div Container e aumentar a porcentagem que essa div pode ocupar da container
+        o padrão antes de quebrar o layou com flex direction estava nos 82%*/
+    }
+
+    .Plano_Premium{
+        width: 80%; /*antes estava 62% e por isso a largura auto da div TituloBanner que conté o texto estava limitada, fazendo com que o
+        texto quebrasse, mas logo depois de analiar eu percebi
+        que para resolver bastava aumentar a largura dessa div que é o Container da TituloBanner*/
+    }
+
+    /*as modificações abaixo é para o layout do ipar air*/
+    .Titulo_banner{
+        height: 15%;
+    }
+
+    .Subtitulo_banner{
+        height: 20%; /*diminui apenas para ficar melhor no layout do ipad air*/
+    }
+
+    /*.Titulo_banner{
+        width: 100%; 
+    }*/
+
+    .Botão_Assinar{
+        height: 80%;
+    }
+
+    .Botão_VerPlano{
+        height: 80%;
+    }
+}
+
+@media (max-width: 685px){
+
+    .Plano_Premium{
+        width: 90%;
+        
+    }
+
+    .Titulo_banner h1{
+        font-size: 28px;
+    }
+
+}
+
+@media (max-width: 560px){ 
+    /*Aqui eu devo deixar as div ocupando 100% da tela com um bom espaçamento, dito isso aqui eu vou ter que mexer em uma porrada de coisa  */
+
+    .Titulo_banner h1{
+        font-size: 23px;
+    }
+
+    .Subtitulo_banner h2{
+        font-size: 14px;
+    }
+
+    /*Em alguns layouts mobile a escrita estava começando a quebrar e também a ficar desproporcional*/
+    .Botão_Assinar{
+        font-size: 12px;
+    }
+
+    .Botão_VerPlanos{
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 450px){
+
+    .Titulo_banner{
+        height: 13%; /*estava 30*/
+    }
+
+    .Titulo_banner h1{
+        font-size: 18px;
+    }
+
+    .Subtitulo_banner h2{
+        font-size: 11px;
+    }
+
+    .Subtitulo_banner{
+        height: 20%; /*Estava 32% para poder aplicar o space-between e ficar afastado igual o desing origial, mas no mobile fica muito afastado, então eu diminui a altura*/
+    }
+
+    .Descricao_banner{
+        height: 13%;/*Estava antes os 10%*/
+        font-size: 9.5px; 
+    }
+
+    .Botão_Assinar{
+        font-size: 10px;
+    }
+
+    .Botão_VerPlanos{
+        font-size: 10px;
+    }
+
+}
+
+
+@media (max-width: 300px) { /*Aqui eu diminui ainda mais as prorpoções das fontes e imagem para ficar mais proporcionais as telas menores
+    como o Galaxy Fold */
+    .Titulo_banner h1{
+        font-size: 15px;
+    }
+
+    .Subtitulo_banner h2{
+        font-size: 9px;
+    }
+
+    .Descricao_banner p{
+        font-size: 8px;
+    }
+
+    /*Abaixei a fonte do menu hamburguer*/
+    .Lista_Hamburguer h1{
+        font-size: 16px;
+    }
+
+    .Lista_Hamburguer h3{
+        font-size: 16px;
+    }
+
+    .Header img{ /*Tamanho está definido no html*/
+        height: 25px;
+        width: 80px;
+    }
+
+    .Logo_Premium img{ /*Tamanho está definido no html*/
+        height: 300px; /*Abaixei a imagem para ficar proporcional a tela do Galaxy Fold (aparelhos com a tela muito fina)*/
+    }
+
+    .Botão_Assinar{
+        font-size: 8px;
+
+        height: 70%;
+        width: 280px; /*310px*/
+    }
+
+    .Botão_VerPlanos{
+        font-size: 8px;
+
+        height: 70%;
+    }
+}
+
+
+
+
+
+
+
+/*Daqui para baixo começa o o "Por que ser Premium?"*/
+
+
+@media (max-width: 1128px) {
+
+    .Container_ser_Premium{
+        height: 120vh; /*esse é o fundo branco*/
+    }
+
+    .Box_ser_Premium{
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        height: 90%;
+    }
+
+    .Vantagens_ser_Premium{
+        flex-wrap: wrap;
+        width: 80%; /*estava 100%*/
+    }
+
+    .Itens_ser_Premium{
+        height: 50%;
+        width: 400px; /*280px antes*/
+    }
+
+    .Titulo_ser_Premium{
+        height: 8%; /*Antes estava em 12%, diminui para o titulo não ficar muito distante dos itens abaixo*/
+    }
+
+}
+
+
+@media (max-width: 1005px) { /*acima disso já está alinhado*/
+
+
+    .Vantagens_ser_Premium{
+        width: 100%; /*Ocupando 100% os itens tem mais espaço e assim eles ficam em dois em 
+        layouts menores, responsivo até os 660px de largura da tela*/
+    }
+
+    .Itens_ser_Premium{
+        width: 45%;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+
+    .Container_ser_Premium{
+        height: 150vh;
+    }
+
+    .Box_ser_Premium{
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 90%;
+    }
+
+    .Vantagens_ser_Premium{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+
+        align-items: center;
+    }
+
+    .Itens_ser_Premium{
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 490px) {
+
+    .Titulo_ser_Premium{
+        height: 5%;
+    }
+
+    .Titulo_ser_Premium h2{ /*Foi somente necessário diminuir o titulo*/
+        font-size: 30px;
+    }
+
+    .Imagem_Ser_Premium img{
+        height: 115px;
+        width: 115px;
+    }
+}
+
+@media (max-width: 376px){
+
+    .Box_ser_Premium{
+        width: 100%;
+    }
+
+    .Itens_ser_Premium{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .Imagem_Ser_Premium img{
+        height: 100px;
+        width: 100px;
+    }
+
+    .Imagem_Ser_Premium{
+        height: 70%;
+    }
+
+    .Titulo_ser_Premium h2{
+        font-size: 25px;
+    }
+
+    .Subtitulo_ser_Premium p{
+        font-size: 16px;
+    }
+
+    .Descricao_ser_Premium p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 350px){
+    .Titulo_ser_Premium h2{
+        font-size: 22px;
+    }
+}
+
+
+/*Aqui começa os Planos: Individual, Universitário, Duo e Família*/
+
+@media (max-width: 987px){
+    .Background_Planos{
+        height: 250vh;
+    }
+
+    .Container_Planos{
+        height: 95%;
+    }
+
+    .Plano_Individual{  /*Aumentei para o tamanho da div do Pai, antes eu coloquei o pai maior apenas 
+        para os planos não ficarem grudados antes do flex-wrap funcionar*/
+        height: 455px;
+        width: 385px;
+    }
+}
+
+
+@media (max-width: 540px) {
+
+    .Container_Planos{
+        width: auto;
+    }
+
+    .Plano_Individual{  /*Aqui*/
+        height: 450px;
+        width: 360px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    
+    .Container_Plano_Indivudual{
+        width: 95%;
+    }
+
+    .Plano_Individual{
+        width: 330px;
+        height: 410px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Layout responsivo para as seguintes telas Surface Pró e IPADs PRÓ and Mini*/
+    /*Em todo o site eu preciso corrigir a largura ou altura dos intens para ficarem menos afastados nesses layouts largos*/
+
+@media (min-height: 1365px) { /*Layout responsivo para as seguintes telas Surface Pró e IPADs PRÓ and Mini*/
+    /*Em todo o site eu preciso corrigir a largura ou altura dos intens para ficarem menos afastados nesses layouts largos*/
+    
+    .Background_Container{  /*ipad pró*/
+        height: 70vh;
+    }
+    
+    .Plano_Premium{
+        height: 50%;
+    }
+
+    .Container_ser_Premium{
+        height: 100vh;
+    }
+
+    .Itens_ser_Premium{
+        height: 40%;
+    }
+
+}
+
+
+@media (min-height: 1175px) {  /*IPAD AIR*/
+
+    .Container_ser_Premium{
+        height: 90vh;
+    }
+
+    .Itens_ser_Premium{
+        height: 40%;
+    }
+}
+
+@media (min-height: 1020px) { /*IPAD MINI*/
+
+    .Container_ser_Premium{
+        height: 95vh;
+    }
+
+    .Itens_ser_Premium{
+        height: 40%;
+    }
+
+}
+
+
+/*Arrumar o Container dos Planos, eles também ficaram separados ou se sobreporam*/

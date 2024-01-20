@@ -1,0 +1,723 @@
+body, input, textarea, button {
+    font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif)),Helvetica,Arial,sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+.Container_Header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 80px;
+    width: 100%;
+    
+    background-color: rgb(0, 0, 0);
+}
+
+/* Div aonde fica os itens centralizados*/
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+    width: 75%;
+}
+
+
+/* Nav itens */
+
+.Nav_{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100%;
+    width: 45%;
+}
+
+
+.Nav_ li{
+    font-family: CircularSp,spotify-circular,Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+
+    color: #ffff;
+    list-style: none;
+
+    margin-top: 3px;
+
+    cursor: pointer;
+}
+
+.Nav_ :hover a{
+    color: #1ED760;
+}
+
+
+
+/*Menu-responsivo*/
+
+.menu_Hamburguer{
+    display: none; /*Ele está none para não aparecer, eu não coloquei o display flex no @media pois ele está sendo puxado pelo javaScriot*/
+
+    position: absolute; /*Sem o Absolute esse menu faz descer o próximo container*/
+    justify-content: flex-end;
+
+    height: 100vh;
+    width: 40%;
+
+    background-color: rgb(0, 0, 0);
+    margin-left: 52px;
+
+}
+
+
+#burguer{
+    display: none;
+    color: whitesmoke;
+}
+
+
+.container_Hamburguer{ /*Container Invisivel para posicionar o menu hamburguer na ponta direita*/
+    display: flex;
+    justify-content: flex-end;
+
+    width: 100%;
+}
+
+
+@media (max-width: 1084px) {
+
+    .Header{
+        justify-content: flex-start;
+    }
+
+    .Nav_{
+        display: none; /*oculta o menu para mostrar somente o hamburguer*/
+    }
+
+    #burguer{
+        display: flex;/*De none ele se torna flex para ser mostrado a partir desse layou de 1084px*/
+        position: relative;
+    }
+
+}
+
+.Lista_Hamburguer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 80%;
+    height: 45%;
+    
+    margin-left: 30px;
+}
+
+/*O LI abaixo é a config padrão de todos os textos do menu hamburguer*/
+.Lista_Hamburguer li{
+    font-family: CircularSp,spotify-circular,Helvetica,Arial,sans-serif;
+
+    list-style: none;
+    color: white;
+}
+
+.Lista_Hamburguer h1{
+    font-size: 32px;
+}
+
+.Lista_Hamburguer h3{
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+
+.Logo_Menu_Hamburguer{
+    display: flex;
+    align-items: flex-end;
+
+    height: 55%;
+    width: 80%;
+
+    margin-left: 30px;
+}
+
+.Image_Hamburguer{
+    margin: 0px 0px 30px 0px;
+}
+
+/*Menu Hamburguer vai aumentar para ficar mais visivel e no próximo ele vai cobrir 100% da tela(celular)*/
+
+@media (max-width: 768px) {
+
+    .menu_Hamburguer{
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 510px) {
+
+    .menu_Hamburguer{
+        width: 85%;
+    }
+
+    .Lista_Hamburguer h1{
+        font-size: 25px;
+    }
+
+    .Lista_Hamburguer h3{
+        margin-top: 10px;
+        /*font-size: 17px;
+        font-weight: normal; sendo aplicado na config padrão acima*/
+    }
+
+}
+
+@media (max-width: 445px) {
+    .menu_Hamburguer{
+        width: 100%;
+    }
+}
+
+/*Aqui termina Header/Menu Hamburguer e sua responsividade*/
+
+
+/*Daqui para baixo começa o o "Banner" */
+
+
+.Background_Container{ /*Fundo Roxo que posiciona o Banner_Container, codigo logo abaixo*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 72vh;
+    width: 100%;
+
+    background-color: #121212;
+   /* background-color: #9C2FEC;*/ 
+}
+
+.Banner_Container{ /*Div centralizada pelo container roxo*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 82%;
+    width: auto;
+}
+
+.Plano_Premium{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    height: 95%;
+    width: 62%;
+}
+
+.Titulo_banner{
+    height: 30%;
+    width: auto;
+    
+}
+
+.Titulo_banner h1{
+    color: white;
+
+    font-size: 40px;
+    font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif));
+}
+
+.Subtitulo_banner{
+    display: flex;
+    justify-content: space-between;
+
+    flex-direction: column;
+
+    height: 32%;
+    width: auto;
+}
+
+.Subtitulo_banner h2{
+    color: white;
+
+    font-size: 24px;
+    font-weight: 10;
+    font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif));
+}
+
+.Descricao_banner{ /*Container da descrição que fica abaixo dos botões, apenas para posicioná-los da melhor forma*/
+    display: flex;
+    align-items: end;
+
+    height: 10%;
+    width: 95%; /*esse container não pode ser auto como os outros pq ele vai encostar na imagem e bugar*/
+
+    font-size: 11px;
+    color: white;
+    font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif));
+}
+
+
+
+.Botoes_banner{ /*Aqui fica o Container dos botões*/
+    display: flex;
+    align-items: end; /*Posicionando para ficar no final, fica mais parecido com o Layou Original*/
+
+    height: 15%;
+    width: auto;
+}
+
+.Botão_Assinar { /*Esse é um dos botões*/
+    height: 75%; 
+    width: 310px; 
+
+    color: white;
+    background-color: #242424;
+    border-radius: 25px;
+    border: none;
+
+    font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif));
+    font-size: 15px;
+    font-weight: bolder;
+
+    cursor: pointer;
+}
+
+.Botão_VerPlanos{ /*Segundo botão*/
+    height: 75%;
+    width: 150px;
+
+    color: white;
+    background-color: #C4B1D4;
+    border-radius: 25px;
+    border: whitesmoke solid 2px;
+
+    font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif));
+    font-size: 15px;
+    font-weight: bolder;
+
+    margin-left: 10px;
+
+    cursor: pointer;
+}
+
+
+/*Essa div está posicionando apenas a imagem ao lado dos textos dos planos Premium*/
+.Logo_Premium{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 93%;
+    width: auto;
+
+    /*border: green solid 1px;*/
+}
+
+/*Por que ser Premium   -  Aqui vamos comça a parte abaixo do background roxo*/
+
+
+.Container_ser_Premium{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 77vh;
+    width: 100%;
+
+    background-color: #C4B1D4;
+}
+
+.Box_ser_Premium{
+    height: 75%;
+    width: auto; /*75%*/
+}
+
+
+.Titulo_ser_Premium{
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-end;
+
+    height: 12%;
+    width: 100%;
+}
+
+.Titulo_ser_Premium h2{
+    font-family: var(--font-family,CircularSp,CircularSp-Arab,
+    CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,
+    var(--fallback-fonts,sans-serif)),Helvetica,Arial,sans-serif;
+    font-size: 38px;
+}
+
+.Vantagens_ser_Premium{
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 85%;
+    width: 100%;
+
+
+    /*flex-wrap: wrap;*Coloquei no Layou responsivo*/
+}
+
+.Itens_ser_Premium{
+    height: 78%;
+    width: 280px;
+}
+
+
+
+.Imagem_Ser_Premium{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 75%;
+    width: 100%;
+}
+
+.Subtitulo_ser_Premium{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 10%;
+    width: 100%;
+}
+
+.Subtitulo_ser_Premium p{
+    font-family: var(--font-family,CircularSp,CircularSp-Arab,
+    CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,
+    CircularSp-Deva,var(--fallback-fonts,sans-serif));
+    font-weight: bold;
+
+    font-size: 18px;
+}
+
+.Descricao_ser_Premium{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 15%;
+    width: 100%;
+}
+
+.Descricao_ser_Premium P{
+    font-family: var(--font-family,CircularSp,CircularSp-Arab,
+    CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,
+    CircularSp-Deva,var(--fallback-fonts,sans-serif));
+    font-size: 16px;
+}
+
+
+
+.Background_Planos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 150vh;
+    width: 100%;
+
+    background-color: #121212;
+}
+
+.Container_Planos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    width: 78%;
+    height: 90%;
+
+    flex-wrap: wrap;
+}
+
+.Container_Plano_Indivudual{ /*Aidicionei apenas para ajudar o FLEXWRAP A fazer ele quebrar antes dos planos ficarem exatamente
+    uns com os outros*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 455px;
+    width: 385px;
+}
+
+.Plano_Individual{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    height: 450px;
+    width: 360px;
+
+    border-radius: 11px;
+
+    background-color: #242424;
+}
+
+.Info_Plano{
+    height: 7%;
+    width: 100%;
+}
+
+.Background_Info_Plano{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 30px;
+    width: 150px;
+
+    border-bottom-right-radius: 7px;
+    border-top-left-radius: 10px;
+
+    background-color: #FFD2D7;
+}
+
+#Info_2{
+    background-color: #C4B1D4;
+}
+
+.Background_Info_Plano_1{
+    background-color: #FFD2D7;
+}
+
+Background_Info_Plano_2{
+    background-color: #C4B1D4;
+}
+
+.Background_Info_Plano p{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.Logo_Plano{
+    height: 50px;
+    width: 92%;
+
+    /*border: red solid 1px;*/
+}
+
+.Titulo_Plano{
+    display: flex;
+    align-items: center;
+
+    height: 11%;
+    width: 92%;
+}
+
+.Titulo_Plano h1{
+    color: #FFD2D7;
+}
+
+#Titulo_Plano_2 h1{
+    color: #C4B1D4;
+}
+
+#Titulo_Plano_3 h1{
+    color: #FFC862;
+}
+
+#Titulo_Plano_4 h1{
+    color: #A5BBD1;
+}
+
+.Descricao_Plano{
+    height: 12%;
+    width: 92%;
+
+    border-bottom: #2F2F2F solid 2px;
+}
+
+.Descricao_Plano p{
+    color: white;
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+.Sub_Descricao_Plano{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 18%;
+    width: 92%;
+
+    margin-top: 11px;
+}
+
+#Sub_Descricao_Plano_3{
+    height: 25%;
+    align-items: flex-end;
+}
+
+#Sub_Descricao_Plano_4{
+    height: 28%;
+}
+
+.Lista_Descricao_Plano{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 70%;
+    width: 100%;
+}
+
+.Lista_Descricao_Plano li{
+    color: white;
+    margin-left: 20px;
+    margin-top: 3px;
+}
+
+
+.Background_Botao_Plano{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 16%;
+    width: 92%;
+}
+
+.Botao_Plano{
+    height: 50px;
+    width: 95%;
+
+    background-color: #FFD2D7;
+    border-radius: 35px;
+    border: none;
+}
+
+#Botao_Plano_2{
+    background-color: #C4B1D4;
+}
+
+#Botao_Plano_3{
+    background-color: #FFC862;
+}
+
+#Botao_Plano_4{
+    background-color: #A5BBD1;
+}
+
+.Botao_Plano p{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.texto_plano{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 15%;
+    width: 92%;
+}
+
+#texto_plano_3{
+    justify-content: flex-start;
+}
+
+.texto_plano p{
+    font-size: 12px;
+    color: #A7A7A7;
+}
+
+.Background_Footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 75vh;
+    width: 100%;
+
+    background-color: black;
+}
+
+.Container_Footer{
+    display: flex;
+    justify-content: space-between;
+
+    height: 65%;
+    width: 78%;
+
+    border: #A5BBD1 solid 1px;
+}
+
+.Imagem_footer{
+    height: 65px;
+    width: 14%;
+}
+
+.Saber_mais_Footer{
+    display: flex;
+
+    height: 320px;
+    width: 65%;
+}
+
+.Redes_Sociais{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 70px;
+    width: 16%;
+}
+
+.Info_footer{
+    height: auto;
+    width: 25%;
+
+    list-style: none;
+}
+
+
+#Info1 p{
+    color:  #919496;
+    font-family: CircularSp,spotify-circular,Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.Info_footer p{
+    color: whitesmoke;
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+.Info_footer p:hover{
+    color: #1ED760;
+}
+
+.Informacoes_do_site{
+    height: 50px;
+    width: 78%;
+
+    border: #C4B1D4 solid 1px;
+}
