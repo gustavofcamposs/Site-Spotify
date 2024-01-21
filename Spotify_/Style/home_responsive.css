@@ -206,6 +206,14 @@
 
 /*Daqui para baixo começa o o "Por que ser Premium?"*/
 
+@media (min-width: 1974px) {
+
+    .Background_Planos{
+        height: 95vh;
+    }
+
+}
+
 
 @media (max-width: 1128px) {
 
@@ -295,6 +303,24 @@
         height: 115px;
         width: 115px;
     }
+
+
+    #Sub_Descricao_Plano_4{
+        height: 50%;
+    }
+
+    #Plano_Individual_4{
+        height: 440px;
+    }
+
+    #Background_Botao_Plano_4{
+        height: 18%;
+    }
+
+    .Lista_Descricao_Plano{
+        height: 100%;
+
+    }
 }
 
 @media (max-width: 376px){
@@ -339,9 +365,15 @@
 
 /*Aqui começa os Planos: Individual, Universitário, Duo e Família*/
 
+@media (max-width: 1024px){
+    .Background_Planos{
+        height: 180vh;
+    }
+}
+
 @media (max-width: 987px){
     .Background_Planos{
-        height: 250vh;
+        height: 260vh; /*Mexe na maioria tmb*/
     }
 
     .Container_Planos{
@@ -363,13 +395,17 @@
     }
 
     .Plano_Individual{  /*Aqui*/
-        height: 450px;
+        height: 440px;
         width: 360px;
     }
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 380px) {
+
+    .Background_Planos{
+        height: 290vh;
+    }
     
     .Container_Plano_Indivudual{
         width: 95%;
@@ -383,11 +419,134 @@
 }
 
 
+/*Aqui começa o Foooter*/
+
+@media (max-width: 1182px ) {
+
+    .Imagem_footer{
+        width: auto;
+    }
+
+    .Info_footer{
+        width: 33%;
+    }
+
+    .Redes_Sociais{
+        width: 20%;
+    }
+
+    .Container_Footer{
+        height: 75%;
+    }
+}
+
+@media (max-width: 965px) {
+
+    .Imagem_footer img{
+        height: 35px;
+        width: 120px;
+    }
+
+    .Container_Footer{
+        flex-wrap: wrap;
+        height: 75%;
+    }
+
+    .Saber_mais_Footer{
+        width: 100%;
+    }
+
+    .Redes_Sociais{
+        width: 30%;
+    }
+}
 
 
+@media (max-width: 740px) {
+    .Container_Footer{
+        width: 87%; /*Estava 78%%, vou aumentar Gradativamente até o limite, quando der o limite eu uso o Flex-Direction pra deixar 
+        em coluna*/
+    }
+
+    .Informacoes_do_site{
+        width: 87%;
+    }
+}
+
+@media (max-width: 645px){
+    .Container_Footer{
+        width: 95%; /*aumentando gradativamente*/
+    }
+
+    .Informacoes_do_site{
+        width: 95%;
+    }
+
+    .Redes_Sociais{
+        width: 45%;
+    }
+
+    .Redes_Sociais img{
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media (max-width: 540px){
+
+    .Background_Footer{
+        height: 115vh;
+        /*background-color: antiquewhite; Estpa afetando a maioria dos aparelhos*/
+    }
+
+    .Container_Footer{
+        height: 90%; /*75%*/
+    }
+
+    .Saber_mais_Footer{
+        justify-content: space-between;
+        height: 75%;
+        flex-direction: column;
+    }
+
+    .Info_footer{
+        width: 55%;
+    }
 
 
+}
 
+
+@media (max-width: 480px){
+
+    .Redes_Sociais{
+        width: 55%;
+    }
+
+}
+
+
+@media (max-width: 450px){
+    .Saber_mais_Footer{
+        align-items: center;        
+    }
+
+    .Info_footer{
+        width: 75%;
+    }
+}
+
+
+@media (max-width: 390px) {
+
+    /*.Background_Footer{
+        height: 150vh;
+    } FOi colocado no MAX-HEIGHT 720 */
+
+    .Redes_Sociais{
+        width: 70%;
+    }
+}
 
 
 
@@ -443,3 +602,82 @@
 
 
 /*Arrumar o Container dos Planos, eles também ficaram separados ou se sobreporam*/
+/*Aqui fica os planos*/
+
+
+@media (min-height: 1365px) {
+
+    .Background_Planos{
+        height: 50vh;
+
+    }
+
+
+    .Container_Planos{
+        height: 80%;
+    }
+
+}
+
+@media (min-height: 1180px) {
+
+    
+    .Background_Planos{
+        height: 95vh;
+    }
+
+    .Container_Planos{
+        width: 100%;
+        height: 95%;
+    }
+}
+
+@media (min-height: 1024px) {
+
+    .Background_Planos{
+        height: 105vh;
+    }
+
+    .Container_Planos{
+        height: 95%;
+        width: 100%;
+    }
+
+    .Container_Plano_Indivudual{
+        width: 370px;
+    }
+}
+
+@media (min-height: 950px) {
+
+    .Background_Planos{
+        height: 110vh; /*estava 200 e pouco*/
+    }
+
+    .Container_Planos{
+        width: 100%;
+    }
+}
+
+
+@media (min-height: 1250px){
+    .Background_Planos{
+        height: 90vh;
+    }
+}
+
+
+
+/*Aqui começa o Footer em relação a altura*/
+
+@media (min-height: 1355px){
+    .Background_Footer{
+        height: 45vh;
+    }
+}
+
+@media (max-height: 720px){
+    .Background_Footer{
+        height: 145vh;
+    }
+}

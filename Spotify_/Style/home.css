@@ -298,8 +298,8 @@ body, input, textarea, button {
     height: 75%;
     width: 150px;
 
-    color: white;
-    background-color: #C4B1D4;
+    color: whitesmoke;
+    background-color: #C4B1D4; /*#C4B1D4*/
     border-radius: 25px;
     border: whitesmoke solid 2px;
 
@@ -309,7 +309,6 @@ body, input, textarea, button {
 
     margin-left: 10px;
 
-    cursor: pointer;
 }
 
 
@@ -336,7 +335,7 @@ body, input, textarea, button {
     height: 77vh;
     width: 100%;
 
-    background-color: #C4B1D4;
+    background-color: black;
 }
 
 .Box_ser_Premium{
@@ -360,6 +359,7 @@ body, input, textarea, button {
     CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,
     var(--fallback-fonts,sans-serif)),Helvetica,Arial,sans-serif;
     font-size: 38px;
+    color: #47C072; /*7AF9AB*/
 }
 
 .Vantagens_ser_Premium{
@@ -370,7 +370,6 @@ body, input, textarea, button {
 
     height: 85%;
     width: 100%;
-
 
     /*flex-wrap: wrap;*Coloquei no Layou responsivo*/
 }
@@ -405,9 +404,10 @@ body, input, textarea, button {
     font-family: var(--font-family,CircularSp,CircularSp-Arab,
     CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,
     CircularSp-Deva,var(--fallback-fonts,sans-serif));
-    font-weight: bold;
+    font-weight: bolder;
 
     font-size: 18px;
+    color: white;/*#C4B1D4*/
 }
 
 .Descricao_ser_Premium{
@@ -425,6 +425,7 @@ body, input, textarea, button {
     CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,
     CircularSp-Deva,var(--fallback-fonts,sans-serif));
     font-size: 16px;
+    color: white;
 }
 
 
@@ -447,7 +448,7 @@ body, input, textarea, button {
 
 
     width: 78%;
-    height: 90%;
+    height: 90%;    
 
     flex-wrap: wrap;
 }
@@ -664,8 +665,6 @@ Background_Info_Plano_2{
 
     height: 65%;
     width: 78%;
-
-    border: #A5BBD1 solid 1px;
 }
 
 .Imagem_footer{
@@ -715,9 +714,3 @@ Background_Info_Plano_2{
     color: #1ED760;
 }
 
-.Informacoes_do_site{
-    height: 50px;
-    width: 78%;
-
-    border: #C4B1D4 solid 1px;
-}
